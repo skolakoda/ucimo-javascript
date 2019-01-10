@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formular</title>
+</head>
+<body>
+
+  <h1>Dodaj film</h1>
+
+  <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="post">
+    naziv: <input name="naziv" value="Prohujalo sa vihorom" required><br>
+    godina: <input type="number" name="godina" value="1939" required><br>
+    slika: <input name="slika" value="https://upload.wikimedia.org/wikipedia/commons/b/b3/Gone_With_The_Wind_1967_re-release.jpg" required><br>
+    <button type="submit">Pošalji</button>
+  </form>
+
+  <script src="fetch-post.js"></script>
+</body>
+</html>
